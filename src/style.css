@@ -101,7 +101,6 @@ body {
   position: absolute;  
   display: grid;
   gap: 10px;
-  z-index: 9999;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -114,6 +113,8 @@ body {
   padding: 30px;
   justify-content: center;
   position: relative;
+  z-index: 9999;
+
 }
 #toDo-list li button{
   position: absolute;
