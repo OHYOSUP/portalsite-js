@@ -6,12 +6,15 @@ function onGeook(position) {
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      const name = data.name
-      const weather = data.weather[0].main
-      const weatherContainer = document.getElementById('weather')
-      const weatherCondition = document.getElementById('weatherCondition')
-      const city = document.getElementById('city')
-
+      const name = data.name;
+      const weather = data.weather[0].main;
+      const weatherContainer = document.getElementById("weather");
+      const temp = document.getElementById("temp");
+      const weatherCondition = document.getElementById("weatherCondition");
+      const city = document.getElementById("city");
+      weatherCondition.innerText = name;
+      temp.innerText = `${Math.floor(data.main.temp - 273.15)}℃`;
+      city.innerText = weather;
     });
 }
 

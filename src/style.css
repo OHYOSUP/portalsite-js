@@ -21,13 +21,19 @@ body {
 }
 .js-clock {
   font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .backgroundBtn {
-  padding: 8px;
-  background-color: rgb(46, 74, 230);
+  padding: 10px;
+  cursor: pointer;
+  background: linear-gradient(#e66465, #9198e5);
   border: 0px;
   border-radius: 3px;
   color: white;
+  margin-bottom: 10px;
 }
 
 .initial-box {
@@ -75,8 +81,8 @@ body {
 #toDoForm {
   z-index: 10;
   position: absolute;
-  right: 20px;
-  top: 200px;
+  right: 120px;
+  top: 300px;
 }
 #toDoForm input {
   width: 300px;
@@ -86,10 +92,12 @@ body {
   z-index: 10;
 }
 #toDoForm button {
-  padding: 9px;
-  background-color: rgb(46, 74, 230);
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
   border-radius: 3px;
-  color: white;
+  border: 0;
+  color: black;
   z-index: 10;
 }
 #toDo-list {
@@ -136,4 +144,16 @@ body {
   position: absolute;
   top: 40px;
   left: 20px;
+}
+
+#weather{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 22vw;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 600;
 }
