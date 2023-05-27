@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/style.css"  />
+  <title>Document</title>
+</head>
+<body>
+  <body>
+    <div class="headerBox">
+      <h2 class="js-clock"></h2>
+    <button id="backgroundBtn" class="backgroundBtn">Change Mood</button>
+    <div id="weather">
+      <span id="weatherCondition"></span>
+      <span id="city"></span>
+    </div>
+    </div>
+    <div class="initial-box" class="hidden">      
+        <h1 id="title"></h1>          
+      <form id="loginForm" class="hidden">
+        <input class="input" required maxlength="15" placeholder="이름을 입력하세요" type="text" />
+        <button class="submitBtn" type="submit">로그인</button>
+      </form>    
+
+      <!-- <div id="toDoWrapper"> -->
+      <!-- </div> -->
+    </div>
+    <form id="toDoForm">
+      <input type="text" placeholder="할 일을 입력하세요" required/>
+      <button>Enter</button>
+    </form>
+    <ul id="toDo-list"></ul>   
+
+    <script src="src/js/background.js"></script>
+    <script src="src/js/clock.js"></script>
+    <script src="src/js/toDo.js"></script>
+    <script src="src/js/login.js"></script>
+    <script src="src/js/weather.js"></script>
+
+</body>
+</html>
